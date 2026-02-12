@@ -10,7 +10,7 @@ function connectToDB() {
         })
         .catch(err => {
             console.log("Error connecting to DB")
-            process.exit(1)
+            process.exit(1)// mtlb agr db connect nhi ho pata hai to server ko band kr do
         })
 
 }
