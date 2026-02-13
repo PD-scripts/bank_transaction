@@ -42,7 +42,7 @@ async function userRegisterController(req, res) {
 }
 
 /**
- * - User Login Controller
+ * - User Login Controller  
  * - POST /api/auth/login
   */
 

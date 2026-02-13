@@ -5,10 +5,11 @@ async function createAccountController(req, res) {
 
     const user = req.user;
 
+    //creating new account for the user, account model me user field required hai, isliye user ka id dena padega account create krne ke liye, user ka id req.user me hoga kyuki auth middleware me req.user me user ki information attach kr ke aage badhne dega, to yaha par req.user se user ki information access kr sakte hai aur us user ke liye account create kr sakte hai
     const account = await accountModel.create({
         user: user._id
     })
-
+//account create hone ke baad account ki information response me bhej dena
     res.status(201).json({
         account
     })
